@@ -85,59 +85,5 @@ void main() {
 // int u = 12;                                           
 //    print(u--);              //The postfix value
              
-//------------------------------------------------------------------------------------------------------------------------------------>
-// 2- Relational Operators
-// Relational operators or Comparison operators are used to making a comparison between two expressions and operands
-// 1- >(greater than) 
-print('example of >');
-int h=10;
-int g=5;
-if (h>g) {
-  print(true);
-  
-} else {
-  print(false);
-}
-// 2- <(less than)
-print('example of <');
-if (h<g) {
-  print(true);
-  
-} else {
-  print(false);
-}
-// 3- >=(greater than or equal to)
-print('example of >=');
-if (h>=g) {
-  print(true);
-  
-} else {
-  print(false);
-}
-// 4- <=(less than or equal)
-print('example of <=');
-if (h<=g) {
-  print(true);
-  
-} else {
-  print(false);
-}
-// 5- ==(is equal to)
-print('example of ==');
-if (h==g) {
-  print(true);
-  
-} else {
-  print(false);
-}
-// 6- !=(not equal to)
-//print('example of (!= ) not equal to');
-if (h!=g) {
-  print(true);
-  
-} else {
-  print(false);
-}
-  
 
 }
