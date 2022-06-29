@@ -1,89 +1,86 @@
 void main() {
+//---------------------------------------------Control Flow Statements------------------------------------------------------------------>
+  //------------------------- Statements----------------------------
 
-  // // The dynamic keyword can also be used as a type annotation explicitly.
-  // // for example 
-  // dynamic
-  // //int
-  //  a = 10;
-  // print(a);
-  // print(a.runtimeType);
-  // //string
-  // a= "Ali";
-  // print(a);
-  // print(a.runtimeType);
-  // //bool
-  // a=true;
-  // print(a);
-  // print(a.runtimeType);
-  // a= 55.36;
-  // print(a);
-  // print(a.runtimeType);
-  // //----------------------Difference Between Var & Dynamic--------------------------->
-  // // -Var
-  // // var variable once assigned, the type can not change 
-  // // -Dynamic
-  // // dynamic variable type can change over time
-  //------------------------Constant-------------------------------------
-  // -----------Final
+  // if statement
+  int a = 5;
+  if (a == 5) {
+    print(true);
+  }
+  // if else statement
+  int b = 10;
+  if (b == 10) {
+    print(true);
+  } else {
+    print(false);
+  }
+  // if else if statement
+  //for example
+  var marks = 74;
+  if (marks > 85) {
+    print("Excellent");
+  } else if (marks > 75) {
+    print("Very Good");
+  } else if (marks > 65) {
+    print("Good");
+  } else {
+    print("Average");
+  }
+//---------------------------------------Loops in dart------------------------------------
+// loop in programming are use to perform operations for multiple times.
+// 1- for loop
+// for loop syntax for(initialization, condition, incr/decr)
+// 1- The initialization is used as an initial value in a loop, and it executes only once.
+// 2- A condition or test-expression returns Boolean values - True or False. The for loop will execute until the condition is true.
+// 3- Once the condition evaluates false, the loop is ended.
+// 4- The incr/decr is counter to increase or decrease the variable.
+  var i = 0;
+  for (i; i <= 5; i++) {
+    print(i);
+  }
+// types of for loop
+// 1- infinity loop
+// A loop have no end.
 
-//   //  When we do not want to change a variable in the future then we use final and const. It can be used in place of var or in addition to a type.
-//   // A final variable can be set only one time where the variable is a compile-time constant. 
-//   final c= "Abrar";
-//   final d= "How are you";
-//   print(c);
-  print(d);
+// 2- nested loop
+// A loop inside a loop is called nested loop.
 
-//   // -----------const 
-//   // The const is used to create compile-time constants. We can declare a value to compile-time constant such as number, string literal, a const variable, etc.
-//   const v = 1000;
-//   print(v);
-//   // The const keyword is also used to create a constant value that cannot be changed after its creation.
-//   // -------------------Difference Between Const & Final------------------------------>
-//   // The Const keyword in Dart behaves exactly like the final keyword. 
-//   // The only difference between final and const is that the const makes the variable constant from compile-time only.
+// 2- for…in loop
+  var list1 = [10, 20, 30, 40, 50.24];
+  // create an integer variable
+  dynamic sum = 0;
+  print("Dart for..in loop Example");
 
- 
-// // Dart Operators
-// // An operator is a symbol that is used to manipulating the values or performs operations on its
-// // operand. The given expression: 5+4, in this expression, 5 and 4 are operands and "+" is the operator.
+  for (var i in list1) {
+    // Each element of iterator and added to sum variable.
+    sum = i + sum;
+  }
+  print("The sum is : ${sum}");
 
-// //  --Types of Operators
-// // Dart supports the following types of operators.
-// //------------------------------------------------------------------------------------------------------------------------------------>
-// // 1- Arithmetic Operators
-// // for example
-// int x=10 , y=5 ;
-// //add (+) It adds the left operand to the right operand.
-// print(x+y);
+// 3- while loop
 
-// //subtract (-) It subtracts the right operand from the left operand.
-// print(x-y);
+// Syntax of while loop
+// while(condition){
+  //statement(s);
+  // Increment (++) or Decrement (--) Operation;
+// }
+// Example of while loop.
+  print("Dart while loop example");
+  int j = 0;
+  while (j <= 5) {
+    print(j);
+    ++j;
+  }
 
-// //multiply (*)	It multiplies the one operand to another operand.
-// print(x*y);
-
-// // divide (/) It divides the first operand by the second operand and returns quotient.
-// print(x/y);
-
-// // Unary ->	It is used with a single operand changes the sign of it.
-// print(-x-y);
-
-// -----------------Dart Unary Operators (post and prefix)
-// In Java, there are ++ and -- operators are known as increment and decrement operators and also known as unary operators, 
-// respectively. Unary operators, operate on single operand where ++ adds 1 to operands and -- subtract 1 to operand respectively.
-// The unary operators can be used in two ways - postfix and prefix. If ++ is used as a postfix(like x++), it returns the 
-// value of operand first then increments the value of x. If -- is used as a prefix(like ++x), it increases the value of x.
-// int p = 30;   
-//    print(p++);                  //The postfix value  
-     
-// int o = 25;  
-// print(++o);                 //The prefix value,  
-         
-// int z = 10;  
-// print(--z);                  //The prefix value  
-  
-// int u = 12;                                           
-//    print(u--);              //The postfix value
-             
-
+  int h = 1;
+  print("Dart do-while loop example");
+// do while loop
+//Dart do while loop executes a block of the statement first and then checks the condition. If the condition returns true,
+// then the loop continues its iteration. It is similar to Dart while loop but the only difference is,
+// in the do-while loop a block of statements inside the body of loop will execute at least once.
+  do {
+    print(h);
+    h++;
+  } while (h <= 20);
+  print("The loop is terminated");
 }
