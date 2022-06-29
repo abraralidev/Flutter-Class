@@ -31,7 +31,7 @@ void main() {
 //   final c= "Abrar";
 //   final d= "How are you";
 //   print(c);
-//   print(d);
+  print(d);
 
 //   // -----------const 
 //   // The const is used to create compile-time constants. We can declare a value to compile-time constant such as number, string literal, a const variable, etc.
