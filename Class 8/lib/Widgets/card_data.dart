@@ -1,6 +1,4 @@
-// ignore_for_file: camel_case_types
-
-import 'package:class8/Data/constant.dart';
+import 'package:bmical/Data/constant.dart';
 import 'package:flutter/material.dart';
 
 class card_data extends StatelessWidget {
@@ -18,7 +16,7 @@ class card_data extends StatelessWidget {
         icons,
         size: 80,
       ),
-      const SizedBox(
+      SizedBox(
         height: 15,
       ),
       Text(

@@ -1,9 +1,10 @@
-// ignore_for_file: deprecated_member_use, avoid_print, prefer_const_constructors, library_private_types_in_public_api, non_constant_identifier_names
-import 'package:class8/Data/constant.dart';
-import 'package:class8/Pages/result_page.dart';
-import 'package:class8/Widgets/Reusedcard.dart';
-import 'package:class8/Widgets/buttom_button.dart';
-import 'package:class8/Widgets/customfloatingbutton.dart';
+// ignore_for_file: deprecated_member_use
+import 'package:bmical/Data/calculator_brain.dart';
+import 'package:bmical/Data/constant.dart';
+import 'package:bmical/Pages/result_page.dart';
+import 'package:bmical/Widgets/Reusedcard.dart';
+import 'package:bmical/Widgets/buttom_button.dart';
+import 'package:bmical/Widgets/customfloatingbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../Widgets/card_data.dart';
@@ -168,7 +169,7 @@ class _InputPageState extends State<InputPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Action_Button(
+                              Action_button(
                                   onpress: () {
                                     setState(() {
                                       weight--;
@@ -178,7 +179,7 @@ class _InputPageState extends State<InputPage> {
                               SizedBox(
                                 width: 10,
                               ),
-                              Action_Button(
+                              Action_button(
                                   onpress: () {
                                     setState(() {
                                       weight++;
@@ -208,17 +209,17 @@ class _InputPageState extends State<InputPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Action_Button(
+                              Action_button(
                                   onpress: () {
                                     setState(() {
                                       age--;
                                     });
                                   },
                                   icon: Icons.remove),
-                              const SizedBox(
+                              SizedBox(
                                 width: 10,
                               ),
-                              Action_Button(
+                              Action_button(
                                   onpress: () {
                                     setState(() {
                                       age++;
@@ -234,11 +235,25 @@ class _InputPageState extends State<InputPage> {
               ],
             )),
 
+            // onPressed: () {
+            //   // Navigator.push(context,
+            //   //     MaterialPageRoute(builder: (Context) => Result_page()));
+
+            // },
             Buttom_Button(
               buttontext: 'Calculate',
               onpress: () {
-                Navigator.push(context,
-                  MaterialPageRoute(builder: (Context) => Result_Page(bmiResult: '', interpretation: '', resultText: '',)));
+                // ignore: unused_local_variable
+                CalculatorBrain calc = CalculatorBrain(height, weight);
+                print(height);
+                print(weight);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Result_Page(
+                            bmiResult: calc.calculateBMI(),
+                            resultText: calc.getResult(),
+                            interpretation: calc.getinterpretation())));
               },
             ),
           ],

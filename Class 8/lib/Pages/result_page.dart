@@ -1,9 +1,8 @@
-import 'package:class8/Data/constant.dart';
-import 'package:class8/Widgets/Reusedcard.dart';
-import 'package:class8/Widgets/buttom_button.dart';
+import 'package:bmical/Data/constant.dart';
+import 'package:bmical/Widgets/Reusedcard.dart';
+import 'package:bmical/Widgets/buttom_button.dart';
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
 class Result_Page extends StatelessWidget {
   const Result_Page(
       {Key? key,
@@ -29,9 +28,9 @@ class Result_Page extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              padding: const EdgeInsets.all(15),
+              padding: EdgeInsets.all(15),
               alignment: Alignment.bottomLeft,
-              child: const Text(
+              child: Text(
                 'Your Result',
                 style: kResultPageTextStyle,
               ),
@@ -61,6 +60,9 @@ class Result_Page extends StatelessWidget {
                     ],
                   ),
                   onPress: () {})),
+          // FlatButton(
+          //     onPressed: () {},
+          // child:
           Buttom_Button(
             buttontext: 'Re-Calculate',
             onpress: () {
@@ -73,3 +75,14 @@ class Result_Page extends StatelessWidget {
     );
   }
 }
+
+
+
+
+// ignore: unused_element
+
+  // final String bmiResult;
+  // final String resultText;
+  // final String interpretation;
+
+
