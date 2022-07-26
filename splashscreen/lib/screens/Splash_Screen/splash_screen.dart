@@ -1,9 +1,9 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:splashscreen/screens/Home/home.dart';
-
+import '../Onboarding_Screen/onbording.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -18,9 +18,9 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 3),
-        () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => const Home())));
+        const Duration(seconds: 4),
+        () => Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const Onbording())));
   }
 
   @override
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
               // ignore: prefer_const_literals_to_create_immutables
               children: [
                 Image.asset(
-                  'assets/splash.gif',
+                  'assets/splash.gif', // set your app logo here
                   height: 300,
                   width: 300,
                 )
