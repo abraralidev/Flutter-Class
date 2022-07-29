@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "139844760511",
+    "project_id": "ebuy-7c9d0",
+    "storage_bucket": "ebuy-7c9d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139844760511:android:33a6c4824fe93d6e42e70a",
+        "android_client_info": {
+          "package_name": "com.example.ebuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139844760511-6josaffqmt9efou2l38q7an82875nc8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8N6u58XOJwWX69P2lF64oJ-XPwqRKV8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139844760511-6josaffqmt9efou2l38q7an82875nc8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
