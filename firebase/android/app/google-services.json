@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "680710747512",
+    "project_id": "luckydraw-34cbb",
+    "storage_bucket": "luckydraw-34cbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680710747512:android:048b8a0019ed2ef8bec48d",
+        "android_client_info": {
+          "package_name": "com.example.luckydraw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680710747512-8nvem56bdbbe7j6j631n4fkj8h50vf4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABxYnr0REktCNZhnmrggFnPweHKfQvXbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680710747512-8nvem56bdbbe7j6j631n4fkj8h50vf4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
